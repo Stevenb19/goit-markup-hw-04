@@ -36,6 +36,9 @@ h2 {
 
 .header-navegation {
     display: flex;
+    flex-direction: row;
+    margin: 0%;
+    align-items: baseline;
 
 }
 
@@ -51,6 +54,15 @@ h2 {
 
 }
 
+.icon-section-header>svg>path {
+    cursor: pointer;
+}
+
+.icon-section-header>svg>path {
+    fill: #757575;
+}
+
+
 
 
 .header-contact-list {
@@ -60,6 +72,10 @@ h2 {
     gap: 50px;
     margin-left: auto;
 
+}
+
+.header-contact-list :hover {
+    color: var(--accent-color);
 }
 
 h3 {
@@ -109,10 +125,16 @@ h3 {
 
 .header-email {
     line-height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px
 }
 
 .header-phone {
     line-height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px
 }
 
 
@@ -136,7 +158,9 @@ h3 {
 }
 
 .principal-aside {
-    background-color: rgb(47, 48, 58);
+    background-image: url(../images/Imagen-equipo-trbajando.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     text-decoration: none;
 
@@ -233,6 +257,9 @@ button:active {
 
 header {
     height: 80px;
+}
+
+.header-portfolio {
     border-bottom: 1px solid #ececec;
 }
 
