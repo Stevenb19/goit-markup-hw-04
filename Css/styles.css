@@ -54,7 +54,7 @@ h2 {
 
 }
 
-.icon-section-header>svg>path {
+.icon-section-header>svg {
     cursor: pointer;
 }
 
@@ -74,7 +74,9 @@ h2 {
 
 }
 
-.header-contact-list :hover {
+
+
+.header-email:hover {
     color: var(--accent-color);
 }
 
@@ -84,7 +86,6 @@ h3 {
 
 .section-details {
     width: 1200px;
-    height: 122px;
     margin-top: 94px;
     display: flex;
     justify-content: space-between;
@@ -93,22 +94,40 @@ h3 {
 
 .section-details-p0 {
     width: 270px;
-    height: 101px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-section-details {
+    height: 120px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .section-details-p1 {
     width: 270px;
     height: 122px;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-details-p2 {
     width: 270px;
     height: 101px;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-details-p3 {
     width: 270px;
     height: 101px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-section-details {
+    background-color: rgb(245, 244, 250)
 }
 
 .container-a-que-nos-dedicamos {
@@ -304,6 +323,21 @@ footer {
     padding-top: 64px;
 }
 
+.max-footer-container {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.max-footer-container>*>*:hover path {
+    fill: var(--accent-color);
+}
+
+
+.redes {
+    margin-left: 100px;
+}
+
 address {
     width: 231px;
     height: 92px;
@@ -354,12 +388,34 @@ address {
 }
 
 .miembros-container {
-    width: 230px;
-    height: 320px;
+    width: 270px;
+    height: 428px;
     border: 1px solid #ececec;
     display: flex;
     flex-direction: column;
     text-align: center;
+    object-fit: contain;
+    background-color: #ffffff;
+
+}
+
+.items-miembros {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+
+}
+
+
+.items-miembros>svg path {
+    fill: rgb(175, 177, 184);
+
+}
+
+.items-miembros>svg:hover path {
+    fill: var(--accent-color);
 
 }
 
@@ -399,4 +455,28 @@ address {
 .section-details-s {
     margin-top: 20px;
     margin-left: 24px;
+}
+
+.items-clientes>svg path {
+    fill: rgb(175, 177, 184);
+
+}
+
+.items-clientes>svg:hover path {
+    fill: white;
+
+}
+
+.items-clientes>svg:hover rect {
+    fill: var(--accent-color);
+
+}
+
+
+.items-clientes {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    padding-bottom: 94px;
 }
